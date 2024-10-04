@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quizo HTML Template - V.8</title>
+    <!-- FontAwesome-cdn include -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- Google fonts include -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Sen:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap-css include -->
+    <link rel="stylesheet" href="./assets_quiz/css/bootstrap.min.css" />
+    <!-- Animate-css include -->
+    <link rel="stylesheet" href="./assets_quiz/css/animate.min.css" />
+    <!-- Main-StyleSheet include -->
+    <link rel="stylesheet" href="./assets_quiz/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="wrapper position-relative overflow-hidden">
+      <!-- Top content -->
+      <div class="container">
+        <div class="logo_area pt-5">
+          <a href="index.html">
+            <img
+              src="./assets_quiz/images/logo/logo.png"
+              alt="image-not-found"
+            />
+          </a>
+        </div>
+        <div class="step_progress">
+          <div class="d-flex overflow-hidden">
+            <div class="col-1">
+              <div
+                class="step d-inline-block position-relative rounded-pill active"
+              >
+                1
+              </div>
+            </div>
+            <div class="col-1">
+              <div class="step d-inline-block position-relative rounded-pill">
+                2
+              </div>
+            </div>
+            <div class="col-1">
+              <div class="step d-inline-block position-relative rounded-pill">
+                3
+              </div>
+            </div>
+            <div class="col-1">
+              <div class="step d-inline-block position-relative rounded-pill">
+                4
+              </div>
+            </div>
+            <div class="col-1">
+              <div class="step d-inline-block position-relative rounded-pill">
+                5
+              </div>
+            </div>
+            <div class="col-1">
+              <div class="step d-inline-block position-relative rounded-pill">
+                6
+              </div>
+            </div>
+            <div class="col-1">
+              <div class="step d-inline-block position-relative rounded-pill">
+                7
+              </div>
+            </div>
+            <div class="col-1">
+              <div class="step d-inline-block position-relative rounded-pill">
+                8
+              </div>
+            </div>
+            <div class="col-1">
+              <div class="step d-inline-block position-relative rounded-pill">
+                9
+              </div>
+            </div>
+            <div class="col-1">
+              <div class="step d-inline-block position-relative rounded-pill">
+                10
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Circles which indicates the steps of the form: -->
+      <div class="container">
+        <form class="multisteps_form" id="wizard" method="POST">
+          <!------------------------- Step-1 ----------------------------->
+          <div class="multisteps_form_panel">
+            <div
+              class="content_box shadow text-center bg-white d-flex py-5 position-relative"
+            >
+              <div
+                class="form_timer d-flex flex-column rounded-pill position-absolute countdown_timer"
+                data-countdown="2022/10/24"
+              ></div>
+              <div class="question_title p-2">
+                <h1>What is the key difference between weather and climate?</h1>
+              </div>
+            </div>
+            <div class="row mt-5">
+              <div class="left_side_img d-none d-md-block col-md-4">
+                <img
+                  src="./assets_quiz/images/background/car.png"
+                  alt="image-not-found"
+                />
+              </div>
+              <div class="col-md-4">
+                <div class="form_items overflow-hidden">
+                  <ul class="list-unstyled text-center p-0">
+                    <li>
+                      <label
+                        class="step_1 position-relative bg-white shadow animate__animated animate__fadeInRight animate_50ms"
+                        for="opt_1"
+                        >Weather is daily; climate is long-term.
+                        <input
+                          type="radio"
+                          id="opt_1"
+                          name="stp_1_select_option"
+                          value="Weather_is_daily_climate_is_long_term."
+                          checked
+                        />
+                      </label>
+                    </li>
+                    <li>
+                      <label
+                        class="step_1 position-relative bg-white shadow animate__animated animate__fadeInRight animate_100ms"
+                        for="opt_2"
+                        >Weather happens at night; climate during the day.
+                        <input
+                          type="radio"
+                          id="opt_2"
+                          name="stp_1_select_option"
+                          value="Weather_happens_at_night;_climate_during_the_day."
+                        />
+                      </label>
+                    </li>
+                    <li>
+                      <label
+                        class="step_1 position-relative bg-white shadow animate__animated animate__fadeInRight animate_150ms"
+                        for="opt_3"
+                        >Weather is hot; climate is cold.
+                        <input
+                          type="radio"
+                          id="opt_3"
+                          name="stp_1_select_option"
+                          value="Weather_is_hot;_climate_is_cold."
+                        />
+                      </label>
+                    </li>
+                    <li>
+                      <label
+                        class="step_1 position-relative bg-white shadow animate__animated animate__fadeInRight animate_200ms"
+                        for="opt_4"
+                        >Weather describes the ocean; climate the sky.
+                        <input
+                          type="radio"
+                          id="opt_4"
+                          name="stp_1_select_option"
+                          value="Weather_describes_the_ocean;_climate_the_sky."
+                        />
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!------------------------- Step-2 ----------------------------->
+          <div class="multisteps_form_panel">
+            <div
+              class="content_box shadow text-center bg-white d-flex py-5 position-relative"
+            >
+              <div
+                class="form_timer d-flex flex-column rounded-pill position-absolute countdown_timer"
+                data-countdown="2022/10/24"
+              ></div>
+              <div class="question_title p-2">
+                <h1>What role do greenhouse gases play in the atmosphere?</h1>
+              </div>
+            </div>
+            <div class="row mt-5">
+              <div class="left_side_img d-none d-md-block col-md-4">
+                <img
+                  src="./assets_quiz/images/background/car.png"
+                  alt="image-not-found"
+                />
+              </div>
+              <div class="col-md-4">
+                <div class="form_items">
+                  <ul class="list-unstyled text-center p-0">
+                    <li>
+                      <label
+                        class="step_2 position-relative bg-white shadow animate__animated animate__fadeInRight animate_50ms"
+                        for="opt_5"
+                        >They absorb and trap heat in the atmosphere.
+                        <input
+                          type="radio"
+                          id="opt_5"
+                          name="stp_2_select_option"
+                          value="Vatican City"
+                          checked
+                        />
+                      </label>
+                    </li>
+                    <li>
+                      <label
+                        class="step_2 position-relative bg-white shadow animate__animated animate__fadeInRight animate_100ms"
+                        for="opt_6"
+                        >They cool the Earth by reflecting sunlight.
+                        <input
+                          type="radio"
+                          id="opt_6"
+                          name="stp_2_select_option"
+                          value="Australia"
+                        />
+                      </label>
+                    </li>
+                    <li>
+                      <label
+                        class="step_2 position-relative bg-white shadow animate__animated animate__fadeInRight animate_150ms"
+                        for="opt_7"
+                        >They filter harmful gases from the air.
+                        <input
+                          type="radio"
+                          id="opt_7"
+                          name="stp_2_select_option"
+                          value="New york City"
+                        />
+                      </label>
+                    </li>
+                    <li>
+                      <label
+                        class="step_2 position-relative bg-white shadow animate__animated animate__fadeInRight animate_200ms"
+                        for="opt_8"
+                        >They exist only in greenhouses.
+                        <input
+                          type="radio"
+                          id="opt_8"
+                          name="stp_2_select_option"
+                          value="Russia"
+                        />
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!------------------------- Step-3 ----------------------------->
+          <div class="multisteps_form_panel">
+            <div
+              class="content_box shadow text-center bg-white d-flex py-5 position-relative"
+            >
+              <div
+                class="form_timer d-flex flex-column rounded-pill position-absolute countdown_timer"
+                data-countdown="2022/10/24"
+              ></div>
+              <div class="question_title p-2">
+                <h1>Which of the following is NOT a greenhouse gas?</h1>
+              </div>
+            </div>
+            <div class="row mt-5">
+              <div class="left_side_img d-none d-md-block col-md-4">
+                <img
+                  src="./assets_quiz/images/background/car.png"
+                  alt="image-not-found"
+                />
+              </div>
+              <div class="col-md-4">
+                <div class="form_items">
+                  <ul class="list-unstyled text-center p-0">
+                    <li>
+                      <label
+                        class="step_3 position-relative bg-white shadow animate__animated animate__fadeInRight animate_50ms"
+                        for="opt_9"
+                        >Carbon dioxide (CO₂)
+                        <input
+                          type="radio"
+                          id="opt_9"
+                          name="stp_3_select_option"
+                          value="water vapours"
+                          checked
+                        />
+                      </label>
+                    </li>
+                    <li>
+                      <label
+                        class="step_3 position-relative bg-white shadow animate__animated animate__fadeInRight animate_100ms"
+                        for="opt_10"
+                        >Methane (CH₄)
+                        <input
+                          type="radio"
+                          id="opt_10"
+                          name="stp_3_select_option"
+                          value="water vapours"
+                        />
+                      </label>
+                    </li>
+                    <li>
+                      <label
+                        class="step_3 position-relative bg-white shadow animate__animated animate__fadeInRight animate_150ms"
+                        for="opt_11"
+                        >Nitrous oxide (N₂O)
+                        <input
+                          type="radio"
+                          id="opt_11"
+                          name="stp_3_select_option"
+                          value="Microsoft"
+                        />
+                      </label>
+                    </li>
+                    <li>
+                      <label
+                        class="step_3 position-relative bg-white shadow animate__animated animate__fadeInRight animate_200ms"
+                        for="opt_12"
+                        >Oxygen (O₂)
+                        <input
+                          type="radio"
+                          id="opt_12"
+                          name="stp_3_select_option"
+                          value="IBM"
+                        />
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!------------------------- Step-4 ----------------------------->
+          <div class="multisteps_form_panel">
+            <div
+              class="content_box shadow text-center bg-white d-flex py-5 position-relative"
+            >
+              <div
+                class="form_timer d-flex flex-column rounded-pill position-absolute countdown_timer"
+                data-countdown="2022/10/24"
+              ></div>
+              <div class="question_title p-2">
+                <h1>Which of these is a major effect of climate change?</h1>
+              </div>
+            </div>
+            <div class="row mt-5 text-center">
+              <div class="left_side_img d-none d-md-block col-md-4">
+                <img
+                  src="./assets_quiz/images/background/car.png"
+                  alt="image-not-found"
+                />
+              </div>
+              <div class="col-md-4">
+                <div class="form_items">
+                  <ul class="list-unstyled text-center p-0">
+                    <li>
+                      <label
+                        class="step_4 position-relative bg-white shadow animate__animated animate__fadeInRight animate_50ms"
+                        for="opt_13"
+                        >Rising global temperatures.
+                        <input
+                          type="radio"
+                          id="opt_13"
+                          name="stp_4_select_option"
+                          value="Dell"
+                        />
+                      </label>
+                    </li>
+                    <li>
+                      <label
+                        class="step_4 position-relative bg-white shadow animate__animated animate__fadeInRight animate_100ms"
+                        for="opt_14"
+                        >Decreased ocean levels.
+                        <input
+                          type="radio"
+                          id="opt_14"
+                          name="stp_4_select_option"
+                          value="Apple"
+                        />
+                      </label>
+                    </li>
+                    <li>
+                      <label
+                        class="step_4 position-relative bg-white shadow animate__animated animate__fadeInRight animate_150ms"
+                        for="opt_15"
+                        >More rainforests.
+                        <input
+                          type="radio"
+                          id="opt_15"
+                          name="stp_4_select_option"
+                          value="Microsoft"
+                        />
+                      </label>
+                    </li>
+                    <li>
+                      <label
+                        class="step_4 position-relative bg-white shadow animate__animated animate__fadeInRight animate_200ms"
+                        for="opt_16"
+                        >Less sunlight reaching Earth.
+                        <input
+                          type="radio"
+                          id="opt_16"
+                          name="stp_4_select_option"
+                          value="IBM"
+                        />
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!------------------------- Step-5 ----------------------------->
+          <div class="multisteps_form_panel">
+            <div
+              class="content_box shadow text-center bg-white d-flex py-5 position-relative"
+            >
+              <div
+                class="form_timer d-flex flex-column rounded-pill position-absolute countdown_timer"
+                data-countdown="2022/10/24"
+              ></div>
+              <div class="question_title p-2">
+                <h1>Which activity contributes most to global warming?</h1>
+              </div>
+            </div>
+            <div class="row mt-5 text-center">
+              <div class="left_side_img d-none d-md-block col-md-4">
+                <img
+                  src="./assets_quiz/images/background/car.png"
+                  alt="image-not-found"
+                />
+              </div>
+              <div class="col-md-4">
+                <div class="form_items">
+                  <ul class="list-unstyled text-center p-0">
+                    <li>
+                      <label
+                        class="step_5 position-relative bg-white shadow animate__animated animate__fadeInRight animate_50ms"
+                        for="opt_17"
+                        >Burning fossil fuels.
+                        <input
+                          type="radio"
+                          id="opt_17"
+                          name="stp_5_select_option"
+                          value="Oil_and_gas"
+                          checked
+                        />
+                      </label>
+                    </li>
+                    <li>
+                      <label
+                        class="step_5 position-relative bg-white shadow animate__animated animate__fadeInRight animate_100ms"
+                        for="opt_18"
+                        >Recycling waste.
+                        <input
+                          type="radio"
+                          id="opt_18"
+                          name="stp_5_select_option"
+                          value="Apple"
+                        />
+                      </label>
+                    </li>
+                    <li>
+                      <label
+                        class="step_5 position-relative bg-white shadow animate__animated animate__fadeInRight animate_150ms"
+                        for="opt_19"
+                        >Growing crops.
+                        <input
+                          type="radio"
+                          id="opt_19"
+                          name="stp_5_select_option"
+                          value="Microsoft"
+                        />
+                      </label>
+                    </li>
+                    <li>
+                      <label
+                        class="step_5 position-relative bg-white shadow animate__animated animate__fadeInRight animate_200ms"
+                        for="opt_20"
+                        >Driving electric cars.
+                        <input
+                          type="radio"
+                          id="opt_20"
+                          name="stp_5_select_option"
+                          value="IBM"
+                        />
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!------------------------- Step-6 ----------------------------->
+          <div class="multisteps_form_panel">
+            <div
+              class="content_box shadow text-center bg-white d-flex py-5 position-relative"
+            >
+              <div
+                class="form_timer d-flex flex-column rounded-pill position-absolute countdown_timer"
+                data-countdown="2022/10/24"
+              ></div>
+              <div class="question_title p-2">
+                <h1>
+                  What can individuals do to reduce their carbon footprint?
+                </h1>
+              </div>
+            </div>
+            <div class="row mt-5 text-center">
+              <div class="left_side_img d-none d-md-block col-md-4">
+                <img
+                  src="./assets_quiz/images/background/car.png"
+                  alt="image-not-found"
+                />
+              </div>
+              <div class="col-md-4">
+                <div class="form_items">
+                  <ul class="list-unstyled text-center p-0">
+                    <li>
+                      <label
+                        class="step_6 position-relative bg-white shadow animate__animated animate__fadeInRight animate_50ms"
+                        for="opt_21"
+                        >Use energy-efficient appliances.
+                        <input
+                          type="radio"
+                          id="opt_21"
+                          name="stp_6_select_option"
+                          value="Energy_Efficient"
+                          checked
+                        />
+                      </label>
+                    </li>
+                    <li>
+                      <label
+                        class="step_6 position-relative bg-white shadow animate__animated animate__fadeInRight animate_100ms"
+                        for="opt_22"
+                        >Fly more often.
+                        <input
+                          type="radio"
+                          id="opt_22"
+                          name="stp_6_select_option"
+                          value="Apple"
+                        />
+                      </label>
+                    </li>
+                    <li>
+                      <label
+                        class="step_6 position-relative bg-white shadow animate__animated animate__fadeInRight animate_150ms"
+                        for="opt_23"
+                        >Eat more meat.
+                        <input
+                          type="radio"
+                          id="opt_23"
+                          name="stp_6_select_option"
+                          value="Microsoft"
+                        />
+                      </label>
+                    </li>
+                    <li>
+                      <label
+                        class="step_6 position-relative bg-white shadow animate__animated animate__fadeInRight animate_200ms"
+                        for="opt_24"
+                        >Increase car usage.
+                        <input
+                          type="radio"
+                          id="opt_24"
+                          name="stp_6_select_option"
+                          value="IBM"
+                        />
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!------------------------- Step-7 ----------------------------->
+          <div class="multisteps_form_panel">
+            <div
+              class="content_box shadow text-center bg-white d-flex py-5 position-relative"
+            >
+              <div
+                class="form_timer d-flex flex-column rounded-pill position-absolute countdown_timer"
+                data-countdown="2022/10/24"
+              ></div>
+              <div class="question_title p-2">
+                <h1>Which industry contributes the most to deforestation?</h1>
+              </div>
+            </div>
+            <div class="row mt-5 text-center">
+              <div class="left_side_img d-none d-md-block col-md-4">
+                <img
+                  src="./assets_quiz/images/background/car.png"
+                  alt="image-not-found"
+                />
+              </div>
+              <div class="col-md-4">
+                <div class="form_items">
+                  <ul class="list-unstyled text-center p-0">
+                    <li>
+                      <label
+                        class="step_7 position-relative bg-white shadow animate__animated animate__fadeInRight animate_50ms"
+                        for="opt_25"
+                        >Agriculture.
+                        <input
+                          type="radio"
+                          id="opt_25"
+                          name="stp_7_select_option"
+                          value="Agriculture"
+                          checked
+                        />
+                      </label>
+                    </li>
+                    <li>
+                      <label
+                        class="step_7 position-relative bg-white shadow animate__animated animate__fadeInRight animate_100ms"
+                        for="opt_26"
+                        >Fishing.
+                        <input
+                          type="radio"
+                          id="opt_26"
+                          name="stp_7_select_option"
+                          value="Fishing"
+                        />
+                      </label>
+                    </li>
+                    <li>
+                      <label
+                        class="step_7 position-relative bg-white shadow animate__animated animate__fadeInRight animate_150ms"
+                        for="opt_27"
+                        >Mining.
+                        <input
+                          type="radio"
+                          id="opt_27"
+                          name="stp_7_select_option"
+                          value="Mining"
+                        />
+                      </label>
+                    </li>
+                    <li>
+                      <label
+                        class="step_7 position-relative bg-white shadow animate__animated animate__fadeInRight animate_200ms"
+                        for="opt_28"
+                        >Manufacturing.
+                        <input
+                          type="radio"
+                          id="opt_28"
+                          name="stp_7_select_option"
+                          value="Manufacturing"
+                        />
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!------------------------- Step-8 ----------------------------->
+          <div class="multisteps_form_panel">
+            <div
+              class="content_box shadow text-center bg-white d-flex py-5 position-relative"
+            >
+              <div
+                class="form_timer d-flex flex-column rounded-pill position-absolute countdown_timer"
+                data-countdown="2022/10/24"
+              ></div>
+              <div class="question_title p-2">
+                <h1>How does plastic pollution impact marine life?</h1>
+              </div>
+            </div>
+            <div class="row mt-5 text-center">
+              <div class="left_side_img d-none d-md-block col-md-4">
+                <img
+                  src="./assets_quiz/images/background/car.png"
+                  alt="image-not-found"
+                />
+              </div>
+              <div class="col-md-4">
+                <div class="form_items">
+                  <ul class="list-unstyled text-center p-0">
+                    <li>
+                      <label
+                        class="step_8 position-relative bg-white shadow animate__animated animate__fadeInRight animate_50ms"
+                        for="opt_29"
+                        >It entangles marine animals.
+                        <input
+                          type="radio"
+                          id="opt_29"
+                          name="stp_8_select_option"
+                          value="Entangles_animals"
+                          checked
+                        />
+                      </label>
+                    </li>
+                    <li>
+                      <label
+                        class="step_8 position-relative bg-white shadow animate__animated animate__fadeInRight animate_100ms"
+                        for="opt_30"
+                        >It provides habitat for marine life.
+                        <input
+                          type="radio"
+                          id="opt_30"
+                          name="stp_8_select_option"
+                          value="Apple"
+                        />
+                      </label>
+                    </li>
+                    <li>
+                      <label
+                        class="step_8 position-relative bg-white shadow animate__animated animate__fadeInRight animate_150ms"
+                        for="opt_31"
+                        >It improves water quality.
+                        <input
+                          type="radio"
+                          id="opt_31"
+                          name="stp_8_select_option"
+                          value="Microsoft"
+                        />
+                      </label>
+                    </li>
+                    <li>
+                      <label
+                        class="step_8 position-relative bg-white shadow animate__animated animate__fadeInRight animate_200ms"
+                        for="opt_32"
+                        >It reduces ocean temperatures.
+                        <input
+                          type="radio"
+                          id="opt_32"
+                          name="stp_8_select_option"
+                          value="IBM"
+                        />
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!------------------------- Step-9 ----------------------------->
+          <div class="multisteps_form_panel">
+            <div
+              class="content_box shadow text-center bg-white d-flex py-5 position-relative"
+            >
+              <div
+                class="form_timer d-flex flex-column rounded-pill position-absolute countdown_timer"
+                data-countdown="2022/10/24"
+              ></div>
+              <div class="question_title p-2">
+                <h1>Which renewable energy source is most widely used?</h1>
+              </div>
+            </div>
+            <div class="row mt-5 text-center">
+              <div class="left_side_img d-none d-md-block col-md-4">
+                <img
+                  src="./assets_quiz/images/background/car.png"
+                  alt="image-not-found"
+                />
+              </div>
+              <div class="col-md-4">
+                <div class="form_items">
+                  <ul class="list-unstyled text-center p-0">
+                    <li>
+                      <label
+                        class="step_9 position-relative bg-white shadow animate__animated animate__fadeInRight animate_50ms"
+                        for="opt_33"
+                        >Hydroelectric power.
+                        <input
+                          type="radio"
+                          id="opt_33"
+                          name="stp_9_select_option"
+                          value="Hydroelectric"
+                          checked
+                        />
+                      </label>
+                    </li>
+                    <li>
+                      <label
+                        class="step_9 position-relative bg-white shadow animate__animated animate__fadeInRight animate_100ms"
+                        for="opt_34"
+                        >Solar power.
+                        <input
+                          type="radio"
+                          id="opt_34"
+                          name="stp_9_select_option"
+                          value="Solar"
+                        />
+                      </label>
+                    </li>
+                    <li>
+                      <label
+                        class="step_9 position-relative bg-white shadow animate__animated animate__fadeInRight animate_150ms"
+                        for="opt_35"
+                        >Wind power.
+                        <input
+                          type="radio"
+                          id="opt_35"
+                          name="stp_9_select_option"
+                          value="Wind"
+                        />
+                      </label>
+                    </li>
+                    <li>
+                      <label
+                        class="step_9 position-relative bg-white shadow animate__animated animate__fadeInRight animate_200ms"
+                        for="opt_36"
+                        >Geothermal power.
+                        <input
+                          type="radio"
+                          id="opt_36"
+                          name="stp_9_select_option"
+                          value="Geothermal"
+                        />
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!------------------------- Step-10 ----------------------------->
+          <div class="multisteps_form_panel">
+            <div
+              class="content_box shadow text-center bg-white d-flex py-5 position-relative"
+            >
+              <div
+                class="form_timer d-flex flex-column rounded-pill position-absolute countdown_timer"
+                data-countdown="2022/10/24"
+              ></div>
+              <div class="question_title p-2">
+                <h1>What is the most effective way to reduce waste?</h1>
+              </div>
+            </div>
+            <div class="row mt-5 text-center">
+              <div class="left_side_img d-none d-md-block col-md-4">
+                <img
+                  src="./assets_quiz/images/background/car.png"
+                  alt="image-not-found"
+                />
+              </div>
+              <div class="col-md-4">
+                <div class="form_items">
+                  <ul class="list-unstyled text-center p-0">
+                    <li>
+                      <label
+                        class="step_10 position-relative bg-white shadow animate__animated animate__fadeInRight animate_50ms"
+                        for="opt_37"
+                        >Recycling materials.
+                        <input
+                          type="radio"
+                          id="opt_37"
+                          name="stp_10_select_option"
+                          value="Recycling"
+                          checked
+                        />
+                      </label>
+                    </li>
+                    <li>
+                      <label
+                        class="step_10 position-relative bg-white shadow animate__animated animate__fadeInRight animate_100ms"
+                        for="opt_38"
+                        >Incinerating waste.
+                        <input
+                          type="radio"
+                          id="opt_38"
+                          name="stp_10_select_option"
+                          value="Incinerating"
+                        />
+                      </label>
+                    </li>
+                    <li>
+                      <label
+                        class="step_10 position-relative bg-white shadow animate__animated animate__fadeInRight animate_150ms"
+                        for="opt_39"
+                        >Dumping waste into oceans.
+                        <input
+                          type="radio"
+                          id="opt_39"
+                          name="stp_10_select_option"
+                          value="Dumping"
+                        />
+                      </label>
+                    </li>
+                    <li>
+                      <label
+                        class="step_10 position-relative bg-white shadow animate__animated animate__fadeInRight animate_200ms"
+                        for="opt_40"
+                        >Burying waste in landfills.
+                        <input
+                          type="radio"
+                          id="opt_40"
+                          name="stp_10_select_option"
+                          value="Landfills"
+                        />
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+        <!------------------------- Form button ----------------------------->
+        <div class="row pt-5 float-lg-end flex-column">
+          <button
+            type="button"
+            class="f_btn prev_btn bg-white border text-uppercase"
+            id="prevBtn"
+            onclick="nextPrev(-1)"
+          >
+            <span><i class="fas fa-arrow-left"></i></span> Last Question
+          </button>
+          <button
+            type="button"
+            class="f_btn next_btn text-white text-uppercase mt-2"
+            id="nextBtn"
+            onclick="nextPrev(1)"
+          >
+            Next
+          </button>
+          <!-- The submit button that will trigger the handleSubmit function -->
+        </div>
+      </div>
+    </div>
+    <!-- jQuery-js include -->
+    <script src="./assets_quiz/js/jquery-3.6.0.min.js"></script>
+    <!-- Countdown-js include -->
+    <script src="./assets_quiz/js/countdown.js"></script>
+    <!-- Bootstrap-js include -->
+    <script src="./assets_quiz/js/bootstrap.min.js"></script>
+    <!-- jQuery-validate-js include -->
+    <script src="./assets_quiz/js/jquery.validate.min.js"></script>
+    <!-- Custom-js include -->
+    <script src="./assets_quiz/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Green House Guardian Game</title>
+    <!-- Stylesheets -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/meanmenu.min.css" rel="stylesheet" />
+    <link href="assets/css/responsive.css" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet" />
+
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
+
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+    <!--[if lt IE 9
+      ]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script
+    ><![endif]-->
+    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <!-- Cursor -->
+        <div class="cursor"></div>
+        <div class="cursor-follower"></div>
+        <!-- Cursor End -->
+
+        <!-- Preloader -->
+        <div class="preloader"></div>
+        <!-- End Preloader -->
+
+        <!-- Main Header -->
+        <header class="main-header header-style-one">
+            <!-- Header Lower -->
+            <div class="header-lower">
+                <div class="auto-container">
+                    <div class="inner-container">
+                        <div class="d-flex justify-content-between align-items-center flex-wrap">
+                            <div class="nav-outer d-flex align-items-center flex-wrap">
+                                <!-- Logo Box -->
+                                <div class="logo-box">
+                                    <div class="logo">
+                                        <a href="index.html"><img src="assets/images/logo.png" alt=""
+                                                title="sdgacademy" /></a>
+                                    </div>
+                                </div>
+                                <!-- Main Menu -->
+                                <nav class="main-menu navbar-expand-md">
+                                    <div class="navbar-header">
+                                        <!-- Toggle Button -->
+                                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                            aria-expanded="false" aria-label="Toggle navigation">
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                    </div>
+
+                                    <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+                                        <ul class="navigation clearfix">
+                                            <li>
+                                                <a href="index.html">Home</a>
+                                            </li>
+                                            
+                                            <li class="dropdown">
+                                                <a href="https://sdgs.un.org/goals">SDGs</a>
+                                                <ul class="scrollable-list">
+                                                    <li>
+                                                        <a href="https://sdgs.un.org/goals/goal1" target="_blank">Goal
+                                                            1: No Poverty</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://sdgs.un.org/goals/goal2" target="_blank">Goal
+                                                            2: Zero Hunger</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://sdgs.un.org/goals/goal3" target="_blank">Goal
+                                                            3: Good Health and Well-being</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://sdgs.un.org/goals/goal4" target="_blank">Goal
+                                                            4: Quality Education</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://sdgs.un.org/goals/goal5" target="_blank">Goal
+                                                            5: Gender Equality</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://sdgs.un.org/goals/goal6" target="_blank">Goal
+                                                            6: Clean Water and Sanitation</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://sdgs.un.org/goals/goal7" target="_blank">Goal
+                                                            7: Affordable and Clean Energy</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://sdgs.un.org/goals/goal8" target="_blank">Goal
+                                                            8: Decent Work and Economic Growth</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://sdgs.un.org/goals/goal9" target="_blank">Goal
+                                                            9: Industry, Innovation and
+                                                            Infrastructure</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://sdgs.un.org/goals/goal10" target="_blank">Goal
+                                                            10: Reduced Inequalities</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://sdgs.un.org/goals/goal11" target="_blank">Goal
+                                                            11: Sustainable Cities and Communities</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://sdgs.un.org/goals/goal12" target="_blank">Goal
+                                                            12: Responsible Consumption and
+                                                            Production</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://sdgs.un.org/goals/goal13" target="_blank">Goal
+                                                            13: Climate Action</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://sdgs.un.org/goals/goal14" target="_blank">Goal
+                                                            14: Life Below Water</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://sdgs.un.org/goals/goal15" target="_blank">Goal
+                                                            15: Life on Land</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://sdgs.un.org/goals/goal16" target="_blank">Goal
+                                                            16: Peace, Justice and Strong
+                                                            Institutions</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://sdgs.un.org/goals/goal17" target="_blank">Goal
+                                                            17: Partnerships for the Goals</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a href="#">Lesson Plan</a>
+                                                <ul>
+                                                    <li class="dropdown">
+                                                        <a href="#">Country</a>
+                                                        <ul>
+                                                            <!-- List of 5 countries -->
+                                                            <li><a href="usa.html">USA</a></li>
+                                                            <li><a href="canada.html">Canada</a></li>
+                                                            <li><a href="germany.html">Germany</a></li>
+                                                            <!-- Nested dropdown for Bangladesh -->
+                                                            <li>
+                                                                <a href="program-detail.html">Bangladesh</a>
+                                                            </li>
+                                                            <li><a href="uk.html">UK</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="blog.html">Activities</a>
+                                            </li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+
+                            <!-- Main Menu End-->
+                            <div class="outer-box d-flex align-items-center flex-wrap">
+                                <!-- Button Box -->
+                                <div class="header-phone_box">
+
+                                </div>
+
+                                <!-- Button Box -->
+                                <!-- About Widget -->
+                                <span class="about-widget">
+                                    <span class="hamburger">
+                                        <span class="top-bun"></span>
+                                        <span class="meat"></span>
+                                    </span>
+                                </span>
+
+                                <!-- Mobile Navigation Toggler -->
+                                <div class="mobile-nav-toggler">
+                                    <span class="icon flaticon-menu"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End Header Lower-->
+
+            <!-- Mobile Menu  -->
+            <div class="mobile-menu">
+                <div class="menu-backdrop"></div>
+                <div class="close-btn"><span class="icon flaticon-close"></span></div>
+
+                <nav class="menu-box">
+                    <div class="nav-logo">
+                        <a href="index.html"><img src="assets/images/logo.png" alt="" title="" /></a>
+                    </div>
+                    <div class="menu-outer">
+                        <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+                    </div>
+                </nav>
+            </div>
+            <!-- End Mobile Menu -->
+        </header>
+        <!-- End Main Header -->
+
+        <!-- About Sidebar -->
+      <div class="about-sidebar">
+        <div class="gradient-layer"></div>
+        <!-- Close Button -->
+        <div class="close-sidebar-widget close-button">
+          <span class="fa-solid fa-xmark fa-fw"></span>
+        </div>
+        <div class="sidebar-inner">
+          <div class="upper-box">
+            <div class="image">
+              <img
+                style="padding: 20px"
+                src="assets/images/sidebarLogo.png"
+                alt=""
+              />
+            </div>
+            <div class="content-box">
+              <h3>About <span>sdgacademy</span></h3>
+              <div class="text">
+                SDG Classroom is an online education initiative that offers free,
+                high-quality courses on sustainable development and the United
+                Nations Sustainable Development Goals (SDGs). It provides
+                learning materials designed by experts and leaders in
+                sustainability, covering topics like climate action, poverty
+                reduction, and global health. The platform aims to empower
+                individuals and organizations to contribute to achieving the
+                SDGs by 2030. Courses are accessible to learners worldwide,
+                catering to both beginners and professionals.
+              </div>
+              <ul class="about-sidebar_list">
+                <li>Engaging Curriculum</li>
+                <li>Focus on Impact</li>
+                <li>Global Accessibility</li>
+                <li>Fun and Adventure</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Social Box -->
+          <div class="social-box">
+            <a href="https://facebook.com/"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="https://twitter.com/"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="https://www.youtube.com/@SDGCLASSROOM/"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+            <a href="https://instagram.com/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <!-- End About Sidebar -->
+
+        <!-- Page Title -->
+        <section class="page-title">
+            <div class="color-one"></div>
+            <div class="color-two"></div>
+            <div class="color-three"></div>
+            <div class="color-four"></div>
+            <div class="auto-container">
+                <h2>Green House Guardian Game</h2>
+                <ul class="bread-crumb clearfix">
+                    <li>
+                        <a href="index.html"><i class="flaticon-home"></i> SDG Classroom</a>
+                    </li>
+                    <li>Green House Guardian Game</li>
+                </ul>
+            </div>
+            <!--Waves Container-->
+            <div>
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                    <defs>
+                        <path id="gentle-wave"
+                            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                    </defs>
+                    <g class="parallaxx">
+                        <use xlink:href="#gentle-wave" x="148" y="0" fill="rgba(255,255,255,0.7" />
+                        <use xlink:href="#gentle-wave" x="100" y="3" fill="rgba(255,255,255,0.5)" />
+                        <use xlink:href="#gentle-wave" x="70" y="5" fill="rgba(255,255,255,0.3)" />
+                        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                    </g>
+                </svg>
+            </div>
+            <!--Waves end-->
+        </section>
+        <!-- End Page Title -->
+
+        <!-- Sidebar Page Container -->
+
+        <div class="sidebar-page-container">
+            <div class="auto-container">
+                <div class="row clearfix">
+                    <!-- Content Side -->
+                    <div class="content-side col-lg-8 col-md-12 col-sm-12">
+                        <div class="blog-detail">
+                            <div class="blog-detail_inner">
+
+                                <!-- embbed -->
+                                <div style="padding-top: 20px;">
+                                    <embed type="text/html" src="https://green-house-gaurdian.vercel.app/" width="100%"
+                                        height="700">
+                                </div>
+
+                                <p>Credit: <a href="https://api.nasa.gov">NASA EPIC API</a> Credit: <a
+                                        href="https://mynasadata.larc.nasa.gov/">NASA EPIC API</a>
+                                </p>
+
+                                <div class="blog-detail_content">
+
+                                    <!-- Comment Form -->
+                                    <div class="comment-form_outer">
+                                        <div class="group-title">
+                                            <h3>Leave a Comment</h3>
+                                            <div class="form-text">
+                                                Your email address will not be published. Required
+                                                fields are marked *
+                                            </div>
+                                        </div>
+                                        <!-- Comment Form -->
+                                        <div class="comment-form">
+                                            <form method="post" action="blog.html">
+                                                <div class="row clearfix">
+                                                    <div class="col-lg-6 col-md-6 col-sm-12 form-group">
+                                                        <label>Name*</label>
+                                                        <input type="text" name="username" />
+                                                    </div>
+
+                                                    <div class="col-lg-6 col-md-6 col-sm-12 form-group">
+                                                        <label>Email*</label>
+                                                        <input type="text" name="username" />
+                                                    </div>
+
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                                                        <label>Type Comment here*</label>
+                                                        <textarea class="" name="message"></textarea>
+                                                    </div>
+
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                                                        <!-- Button Box -->
+                                                        <button type="submit" class="theme-btn btn-style-one">
+                                                            <span class="btn-wrap">
+                                                                <span class="text-one">submit now
+                                                                    <i class="fa-solid fa-angle-right fa-fw"></i></span>
+                                                                <span class="text-two">submit now
+                                                                    <i class="fa-solid fa-angle-right fa-fw"></i></span>
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <!-- End Default Form -->
+                                    </div>
+                                    <!--End Comment Form -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- End Sidebar Page Container -->
+
+        <section class="related-posts">
+            <div class="auto-container">
+                <!-- Sec Title -->
+                <div class="sec-title centered">
+                    <div class="sec-title_title">Read our blog</div>
+                    <h2 class="sec-title_heading">Read Our <span>More Blog</span></h2>
+                </div>
+
+                <div class="row clearfix">
+                    <!-- News Block One -->
+                    <div class="news-block_one col-lg-4 col-md-6 col-sm-12">
+                        <div class="news-block_one-inner wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                            <div class="news-block_one-image">
+                                <a href="blog-detail.html"><img src="assets/images/resource/blog-6.png" alt="" /></a>
+                            </div>
+                            <div class="news-block_one-content">
+                                <h4 class="news-block_one-title">
+                                    <a href="blog-detail.html">Learn about the Greenhouse effect</a>
+                                </h4>
+                                <a class="news-block_one-more" href="blog-detail.html">Read More <i
+                                        class="flaticon-next-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- News Block One -->
+                    <!-- News Block One -->
+                    <div class="news-block_one col-lg-4 col-md-6 col-sm-12">
+                        <div class="news-block_one-inner wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                            <div class="news-block_one-image">
+                                <a href="blog-detail.html"><img src="assets/images/resource/blog-7.png" alt="" /></a>
+                            </div>
+                            <div class="news-block_one-content">
+                                <h4 class="news-block_one-title">
+                                    <a href="blog-detail.html">Difference between Weatehr and Climate</a>
+                                </h4>
+                                <a class="news-block_one-more" href="blog-detail.html">Read More <i
+                                        class="flaticon-next-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- News Block One -->
+                    <!-- News Block One -->
+                    <div class="news-block_one col-lg-4 col-md-6 col-sm-12">
+                        <div class="news-block_one-inner wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                            <div class="news-block_one-image">
+                                <a href="blog-detail.html"><img src="assets/images/resource/blog-8.png" alt="" /></a>
+                            </div>
+                            <div class="news-block_one-content">
+                                <h4 class="news-block_one-title">
+                                    <a href="blog-detail.html">Elements of Weatehr</a>
+                                </h4>
+                                <a class="news-block_one-more" href="blog-detail.html">Read More <i
+                                        class="flaticon-next-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- News Block One -->
+                </div>
+            </div>
+    </div>
+    </section>
+
+    <!-- Main Footer -->
+    <footer class="main-footer">
+        <div class="color-one"></div>
+        <div class="color-two"></div>
+        <div class="main-footer_icon" style="background-image: url(assets/images/icons/icon-7.png)"></div>
+
+        <!-- Upper Box -->
+        <div class="footer-upper_box">
+            <div class="auto-container">
+                <!-- Newsletter Box -->
+                <div class="newsletter-one">
+                    <div class="newsletter-one_pattern" style="
+                  background-image: url(assets/images/background/pattern-2.png);
+                "></div>
+                    <div class="newsletter-one_pattern-two" style="
+                  background-image: url(assets/images/background/pattern-3.png);
+                "></div>
+                    <div class="row clearfix">
+                        <!-- Column -->
+                        <div class="column col-lg-6 col-md-6 col-sm-12">
+                            <div class="newsletter-one_title">NEWSLETTER</div>
+                            <h2 class="newsletter-one_heading">
+                                Sign up to Our Newsletter for Latest Update
+                            </h2>
+                        </div>
+                        <!-- Column -->
+                        <div class="column col-lg-6 col-md-6 col-sm-12">
+                            <div class="newsletter-box">
+                                <form method="post" action="contact.html">
+                                    <div class="form-group">
+                                        <span class="icon fa-regular fa-envelope fa-fw"></span>
+                                        <input type="email" name="search-field" value="" placeholder="Enter Email Here"
+                                            required />
+                                        <button type="submit" class="template-btn btn-style-one">
+                                            <span class="btn-wrap">
+                                                <span class="text-one">Subscribe Now <i
+                                                        class="flaticon-next-1"></i></span>
+                                                <span class="text-two">Subscribe Now <i
+                                                        class="flaticon-next-1"></i></span>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Upper Box -->
+
+        <!-- Widgets Section -->
+        <div class="widgets-section">
+            <div class="auto-container">
+              <div class="row clearfix">
+                <!-- Big Column -->
+                <div class="big-column col-lg-6 col-md-12 col-sm-12">
+                  <div class="row clearfix">
+                    <!-- Footer Column -->
+                    <div class="footer_column col-lg-6 col-md-6 col-sm-12">
+                      <div class="footer-widget">
+                        <div class="footer-logo">
+                          <a href="index.html"
+                            ><img src="assets/images/logo.png" alt="" title=""
+                          /></a>
+                        </div>
+                        <div class="footer-text">
+                          We provides practical tools to teach the intersection of
+                          science and sustainability, helping students connect
+                          classroom learning with real-world global issues.
+                        </div>
+                        <!-- Social Box -->
+                        <div class="footer_socials">
+                          <a href="https://facebook.com/"
+                            ><i class="fa-brands fa-facebook-f"></i
+                          ></a>
+                          <a href="https://twitter.com/"
+                            ><i class="fa-brands fa-twitter"></i
+                          ></a>
+                          <a href="https://youtube.com/"
+                            ><i class="fa-brands fa-youtube"></i
+                          ></a>
+                          <a href="https://instagram.com/"
+                            ><i class="fa-brands fa-instagram"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+  
+                    <!-- Footer Column -->
+                    <div class="footer_column col-lg-6 col-md-6 col-sm-12">
+                      <div class="footer-widget links-widget">
+                        <h5 class="footer-title">Programs</h5>
+                        <ul class="footer-list">
+                          <li><a href="blog-1.html">Global CO2 (Carbon dioxide) Concentration Trends</a></li>
+                          <li><a href="blog-2.html">Global CO (Carbon monoxide) Concentration Trends</a></li>
+                          <li><a href="blog-6.html">Learn about the Greenhouse effect</a></li>
+                          <li><a href="blog-8.html">Elements of Weather</a></li>
+                          <li><a href="blog-11.html">Layers of Atmosphere</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <!-- Big Column -->
+                <div class="big-column col-lg-6 col-md-12 col-sm-12">
+                  <div class="row clearfix">
+                    <!-- Footer Column -->
+                    <div class="footer_column col-lg-6 col-md-6 col-sm-12">
+                      <div class="footer-widget links-widget">
+                        <h5 class="footer-title">Resources</h5>
+                        <ul class="footer-list">
+                          <li><a href="index.html">Home</a></li>
+                          <li><a href="blog.html">Activities</a></li>
+                          <li><a href="about.html">About Us</a></li>
+                          <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                      </div>
+                    </div>
+  
+                    <!-- Footer Column -->
+                    <div class="footer_column col-lg-6 col-md-6 col-sm-12">
+                      <div class="footer-widget instagram-widget">
+                        <h5 class="footer-title">Gallery</h5>
+                        <div class="images-outer clearfix">
+                          <!--Image Box-->
+                          <figure class="image-box">
+                            <a
+                              class="lightbox-image"
+                              href="assets/images/gallery/1.jpg"
+                              ><img
+                                src="./assets/nsa_img/3015237-poster-p-nasa-visualizes-130-years-of-climate-change-in-30-seconds.png"
+                                alt=""
+                            /></a>
+                          </figure>
+                          <!--Image Box-->
+                          <figure class="image-box">
+                            <a
+                              class="lightbox-image"
+                              href="assets/images/gallery/2.jpg"
+                              ><img
+                                src="./assets/nsa_img/ca_nasaweather_ap.png"
+                                alt=""
+                            /></a>
+                          </figure>
+                          <!--Image Box-->
+                          <figure class="image-box">
+                            <a
+                              class="lightbox-image"
+                              href="assets/images/gallery/3.jpg"
+                              ><img
+                                src="./assets/nsa_img/Climate-Adaption-Plan.jpg"
+                                alt=""
+                            /></a>
+                          </figure>
+                          <!--Image Box-->
+                          <figure class="image-box">
+                            <a
+                              class="lightbox-image"
+                              href="assets/images/gallery/4.jpg"
+                              ><img
+                                src="./assets/nsa_img/maf_20220830_ksc_artemis1_epb_005_large.png"
+                                alt=""
+                            /></a>
+                          </figure>
+                          <!--Image Box-->
+                          <figure class="image-box">
+                            <a
+                              class="lightbox-image"
+                              href="assets/images/gallery/5.jpg"
+                              ><img
+                                src="./assets/nsa_img/spaceshuttle.png"
+                                alt=""
+                            /></a>
+                          </figure>
+                          <!--Image Box-->
+                          <figure class="image-box">
+                            <a
+                              class="lightbox-image"
+                              href="assets/images/gallery/6.jpg"
+                              ><img
+                                src="./assets/nsa_img/z7gtx1kknacd1.jpeg"
+                                alt=""
+                            /></a>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Widgets Section -->
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="auto-container">
+                <div class="row clearfix">
+                    <!-- Column -->
+                    <div class="column col-lg-6 col-md-12 col-sm-12">
+                        <div class="copyright">
+                            Copyright &copy; 2024 Kidscamp All Rights Reserved
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <div class="column col-lg-6 col-md-12 col-sm-12">
+                        <div class="designs_by">
+                            Design with <i class="fa-solid fa-heart fa-fw"></i> by Themeim
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Main Footer -->
+
+    <!-- Search Popup -->
+    <div class="search-popup">
+        <div class="color-layer"></div>
+        <button class="close-search">
+            <span class="flaticon-close"></span>
+        </button>
+        <form method="post" action="blog.html">
+            <div class="form-group">
+                <input type="search" name="search-field" value="" placeholder="Search Here" required="" />
+                <button class="fa fa-solid fa-magnifying-glass fa-fw" type="submit"></button>
+            </div>
+        </form>
+    </div>
+    <!-- End Search Popup -->
+    </div>
+    <!-- End PageWrapper -->
+
+    <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/appear.js"></script>
+    <script src="assets/js/parallax.min.js"></script>
+    <script src="assets/js/tilt.jquery.min.js"></script>
+    <script src="assets/js/jquery.paroller.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/backtotop.js"></script>
+    <script src="assets/js/odometer.js"></script>
+    <script src="assets/js/parallax-scroll.js"></script>
+
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/SplitText.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/ScrollToPlugin.min.js"></script>
+    <script src="assets/js/ScrollSmoother.min.js"></script>
+
+    <script src="assets/js/magnific-popup.min.js"></script>
+    <script src="assets/js/nav-tool.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/jquery.countdown.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
